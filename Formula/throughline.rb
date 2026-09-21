@@ -5,21 +5,21 @@
 class Throughline < Formula
   desc "Local, headless coordination state layer for human/agent workflows."
   homepage "https://github.com/dennisschroeder/throughline"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dennisschroeder/throughline/releases/download/v0.6.0/throughline_0.6.0_darwin_amd64.tar.gz"
-      sha256 "51f63e6e47d0323152150dcc1590366b52913c0db7db0acc2bbd9e7b6c30c649"
+      url "https://github.com/dennisschroeder/throughline/releases/download/v0.7.0/throughline_0.7.0_darwin_amd64.tar.gz"
+      sha256 "9456f7e39fc4f98dda9681fb4b50838562eef4d172a0df0b8c7d8633b3eeb8e6"
 
       define_method(:install) do
         bin.install "throughline"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dennisschroeder/throughline/releases/download/v0.6.0/throughline_0.6.0_darwin_arm64.tar.gz"
-      sha256 "4c96aa7cee28b48e229c1888bf230ed1b0f0de85f3db60bd4f2d0b78c22fa1d6"
+      url "https://github.com/dennisschroeder/throughline/releases/download/v0.7.0/throughline_0.7.0_darwin_arm64.tar.gz"
+      sha256 "837042b5d7f82c6c75091d96f7ea96090ed91bfa85e395f9477cff08a09fdad7"
 
       define_method(:install) do
         bin.install "throughline"
@@ -29,15 +29,15 @@ class Throughline < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dennisschroeder/throughline/releases/download/v0.6.0/throughline_0.6.0_linux_amd64.tar.gz"
-      sha256 "59496710125b0a2894c5568d9eab0a8813aa0b488e7daa174dcdfbe6f316d15d"
+      url "https://github.com/dennisschroeder/throughline/releases/download/v0.7.0/throughline_0.7.0_linux_amd64.tar.gz"
+      sha256 "f5c46c3e8e52da8328c03efaf4c70072db2a1998517281f64f43138a70e1b742"
       define_method(:install) do
         bin.install "throughline"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dennisschroeder/throughline/releases/download/v0.6.0/throughline_0.6.0_linux_arm64.tar.gz"
-      sha256 "5bddf83f77814ddae09a224e39907c6e07f1b40a2faf514f8455efad7b3be0b1"
+      url "https://github.com/dennisschroeder/throughline/releases/download/v0.7.0/throughline_0.7.0_linux_arm64.tar.gz"
+      sha256 "969a0fc2b79e81bcf2f40f37f48a9ca3978dd17f63413df90570752468ee8cf3"
       define_method(:install) do
         bin.install "throughline"
       end
